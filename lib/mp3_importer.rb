@@ -11,5 +11,7 @@ class MP3Importer
   end
 
   def import
+    self.files.each do |file|
+      
   end
 end
