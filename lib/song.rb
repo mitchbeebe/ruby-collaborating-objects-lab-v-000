@@ -26,7 +26,9 @@ class Song
   def artist_name=(name)
     Artist.all.each do |artist|
       if artist.name == name
+        self.artist = artist
       end
     end
+    self.artist = 
   end
 end
