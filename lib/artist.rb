@@ -22,11 +22,11 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    @all.select { |artist| artist.name == name }
-    
+    self.new(name) if @all.select { |artist| artist.name == name }
+  end
   
   def print_songs
-    
+  end
     
   
 end
