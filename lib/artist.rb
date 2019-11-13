@@ -22,12 +22,8 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    @all.each do |artist|
-      
-    end
-    song = Song.new(name)
-    song.artist = self
-  end
+    @all.select { |artist| artist.name == name }
+    
   
   def print_songs
     
