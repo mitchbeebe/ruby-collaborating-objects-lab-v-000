@@ -22,7 +22,9 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    if @@all
+    @all.each do |artist|
+      
+    end
     song = Song.new(name)
     song.artist = self
   end
