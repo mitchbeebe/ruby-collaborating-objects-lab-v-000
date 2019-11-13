@@ -7,7 +7,8 @@ class MP3Importer
   end
   
   def files
-    files = Dir[@path + "/*.mp3"].each {|x| x.gsub(@path,"")}
+    files = Dir[@path + "/*.mp3"]
+    files.
   end
 
   def import
