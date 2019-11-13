@@ -24,6 +24,9 @@ class Song
   end  
   
   def artist_name=(name)
-    Artist.find_or_create
+    Artist.all.each do |artist|
+      if artist.name == name
+        
+    end
   end
 end
