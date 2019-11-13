@@ -24,11 +24,6 @@ class Song
   end  
   
   def artist_name=(name)
-    Artist.all.each do |artist|
-      if artist.name == name
-        self.artist = artist
-      end
-    end
-    self.artist = Artist.new(name)
+    Artist.find_or_create(name)
   end
 end
