@@ -29,6 +29,6 @@ class Song
         self.artist = artist
       end
     end
-    self.artist = 
+    self.artist = Artist.new(name)
   end
 end
