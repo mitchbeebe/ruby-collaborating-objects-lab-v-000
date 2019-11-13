@@ -22,7 +22,7 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    if @@all.include?()
+    if @@all
     song = Song.new(name)
     song.artist = self
   end
